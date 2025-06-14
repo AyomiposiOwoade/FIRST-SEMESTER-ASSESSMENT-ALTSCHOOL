@@ -4,7 +4,6 @@
 
 body {
   display: flex;
-
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -22,6 +21,7 @@ body {
   top: 347px;
   left: 664px;
   padding-left: 25px;
+  max-width: 400px;
 }
 
 .display {
@@ -137,7 +137,8 @@ img {
   mix-blend-mode: Lighten;
 }
 
-.buttons button:hover, #equal:hover {
+.buttons button:hover,
+#equal:hover {
   background: #dcdcdc;
 }
 
@@ -193,4 +194,43 @@ img {
   gap: 30px;
   /* space between calculator and history */
   padding: 20px;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .calculator {
+    width: 90%;
+    padding-left: 10px;
+    height: auto;
+  }
+
+  .display {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 50px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+
+  .buttons button,
+  .buttons button.operator,
+  .backspace,
+  #equal {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .history {
+    width: 90%;
+    font-size: 0.8rem;
+  }
 }
