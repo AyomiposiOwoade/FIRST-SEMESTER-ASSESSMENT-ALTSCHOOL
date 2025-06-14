@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=backspace" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=equal" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="calculator">
+    <input type="text" class="display" id="display" disabled />
+    <div class="buttons">
+      <button class= "append one" onclick="append('1')">1</button>
+      <button class= "append two" onclick="append('2')">2</button>
+      <button class= "append three" onclick="append('3')">3</button>
+      <button class="operator times" onclick="append('*')">&times;</button>
+      <button class="operator divide" onclick="append('/')">&divide;</button>
+      <button class= "append four" onclick="append('4')">4</button>
+      <button class= "append five" onclick="append('5')">5</button>
+      <button class= "append six" onclick="append('6')">6</button>
+      <button class="operator plus" onclick="append('+')">+</button>
+      <button class="operator minus" onclick="append('-')">-</button>
+      <button class= "append seven" onclick="append('7')">7</button>
+      <button class= "append eight" onclick="append('8')">8</button>
+      <button class= "append nine" onclick="append('9')">9</button>
+      <button class="operator percentage" onclick="append('%')">%</button>
+      <button class="operator caret" onclick="clearDisplay()">C</button>
+      <button class= "append dot" onclick="append('.')">.</button>
+      <button class= "append zero" onclick="append('0')">0</button>
+      <button class= "backspace" onclick="backspace()"><img src="./assets/image 1.png" alt="img" ></button>
+      <button id="equal" onclick="calculate()">=</button>
+</div>
+</div>
+<aside class="history" id="history"> <h2>History</h2>
+  <ol id="history-list"></ol></aside>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
+       

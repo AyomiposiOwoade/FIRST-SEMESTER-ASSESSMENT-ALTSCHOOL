@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: black;
+  border-radius: none;
+  box-shadow: 0 10px 20px rgba(17, 17, 17, 0.2);
+  width: 400px;
+  height: 367px;
+  top: 347px;
+  left: 664px;
+  padding-left: 25px;
+}
+
+.display {
+  width: 350px;
+  height: 70px;
+  top: 25px;
+  left: 25px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: right;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(58, 63, 119, 1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 64px 64px 64px 30px 30px;
+  gap: 20px;
+}
+.one {
+  top: 115px;
+  left: 14px;
+}
+.two {
+  top: 115px;
+  left: 100px;
+}
+.three {
+  top: 115px;
+  left: 178px;
+}
+.four {
+  top: 177px;
+  left: 17px;
+}
+.five {
+  top: 177px;
+  left: 100px;
+}
+.six {
+  top: 177px;
+  left: 79px;
+}
+.seven {
+  top: 234px;
+  left: 21px;
+}
+.eight {
+  top: 237px;
+  left: 98px;
+}
+.nine {
+  top: 234px;
+  left: 179px;
+}
+.zero {
+  top: 370px;
+  left: 14px;
+}
+.times {
+  top: 117px;
+  left: 269px;
+}
+.divide {
+  top: 177px;
+  left: 362px;
+}
+.plus {
+  top: 173px;
+  left: 268px;
+}
+.minus {
+  top: 177px;
+  left: 325px;
+}
+.percentage {
+  top: 237px;
+  left: 268px;
+}
+.caret {
+  top: 237px;
+  left: 326px;
+}
+
+.buttons button {
+  padding-right: 10px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 65px;
+  height: 45px;
+  top: 115px;
+  left: 105px;
+  border-radius: 35px;
+}
+
+.buttons button.append {
+  background: rgba(64, 66, 88, 1);
+}
+img {
+  width: 33px;
+  height: 24px;
+  top: 308px;
+  left: 200px;
+  mix-blend-mode: Lighten;
+}
+
+.buttons button:hover, #equal:hover {
+  background: #dcdcdc;
+}
+
+.operator {
+  background: orange;
+  color: white;
+}
+.buttons button.operator {
+  width: 45px;
+  height: 50px;
+}
+#equal {
+  background: rgba(178, 178, 178, 1);
+  width: 104.8px;
+  height: 46.7px;
+  top: 297px;
+  left: 270px;
+  border-radius: 100px;
+  transition: background 0.2s ease;
+}
+
+.history {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  max-height: 100px;
+  overflow-y: auto;
+  background: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.append {
+  background-color: grey;
+  color: white;
+  height: 45px;
+}
+.backspace {
+  background: rgba(64, 66, 88, 1);
+  width: 65px;
+  height: 45px;
+  top: 297px;
+  left: 179px;
+  border-radius: 35px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  /* space between calculator and history */
+  padding: 20px;
+}
